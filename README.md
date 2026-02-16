@@ -9,8 +9,8 @@ IVQRNN is a PyTorch implementation of Instrumental Variable Quantile Regression 
 * **Sieve Neural Networks**: Implements the shallow network architecture for semiparametric estimation based on Chen and White (1999).
 * **Scalable Optimization**: Provides a Stochastic Gradient Descent (SGD) alternative to the grid search.
 * **Hybrid Activations**: Uses specialized activation functions designed for quantile-based structural estimation.
-* **Automated Scaling**: Hidden layer dimensions scale with sample size () to ensure statistical consistency.
-* **Heterogeneous Effects**: Facilitates estimation across the entire distribution of quantiles ().
+* **Automated Scaling**: Hidden layer dimensions scale with sample size to ensure statistical consistency.
+* **Heterogeneous Effects**: Facilitates estimation across the entire distribution of quantiles.
 
 ## Requirements
 
@@ -24,15 +24,15 @@ IVQRNN is a PyTorch implementation of Instrumental Variable Quantile Regression 
 
 ## Repository Structure
 
-* **`IVQRNN_grid.py`**: Implementation using the canonical grid-search optimization method.
-* **`IVQRNN_sgd.py`**: A high-performance version using SGD with momentum for large-scale data ().
+* **`IVQRNN_grid.py`**: Implementation using the canonical grid search optimization method.
+* **`IVQRNN_sgd.py`**: An alternative version using SGD with momentum for large-scale data.
 * **`IVQRNN_lin.py`**: Baseline linear IVQR implementation for comparative analysis.
 
 ## Usage
 
 ### 1. Grid Search 
 
-Run the grid-search implementation for precise estimation on smaller datasets:
+Run the grid search implementation for precise estimation on smaller datasets:
 
 ```bash
 python IVQRNN_grid.py
